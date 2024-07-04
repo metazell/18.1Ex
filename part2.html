@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2</title>
+</head>
+<body>
+
+<p>in terminal type...</p>
+    <li>curl -s 'https://icanhazdadjoke.com/search?term=pirate' -H 'Accept: application/json'</li>
+<p>and you will get...</p>
+    <li>{"current_page":1,"limit":20,"next_page":1,"previous_page":1,"results":[{"id":"QuscibaMClb","joke":"What does a pirate pay for his corn? A buccaneer!"},{"id":"SvzIBAQS0Dd","joke":"What did the pirate say on his 80th birthday? Aye Matey!"},{"id":"2gii3LeN7Ed","joke":"Why couldn't the kid see the pirate movie? Because it was rated arrr!"},{"id":"SnOf2gqjiqc","joke":"Why are pirates called pirates? Because they arrr!"},{"id":"exXSCtkOKe","joke":"Why do pirates not know the alphabet? They always get stuck at \"C\"."}],"search_term":"pirate","status":200,"total_jokes":5,"total_pages":1}</li>
+
+<p>in terminal type... dig icanhazdadjoke.com </p>
+    <li>
+    ; <<>> DiG 9.10.6 <<>> icanhazdadjoke.com
+    ;; global options: +cmd
+    ;; Got answer:
+    ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 14547
+    ;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+    ;; OPT PSEUDOSECTION:
+    ; EDNS: version: 0, flags:; udp: 1232
+    ;; QUESTION SECTION:
+    ;icanhazdadjoke.com.		IN	A
+
+    ;; ANSWER SECTION:
+    icanhazdadjoke.com.	300	IN	A	104.21.66.15
+    icanhazdadjoke.com.	300	IN	A	172.67.198.173
+
+    ;; Query time: 45 msec
+    ;; SERVER: 192.168.4.1#53(192.168.4.1)
+    ;; WHEN: Thu Jul 01 03:15:51 CDT 2024
+    ;; MSG SIZE  rcvd: 115
+    </li>
+    
+</body>
+</html>
